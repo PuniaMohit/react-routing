@@ -1,0 +1,17 @@
+ [
+    {
+        "id": 1,
+        "subject": "Message 1",
+        "body": "This is the body of message 1"
+    },
+    {
+        "id": 2,
+        "subject": "Message 2",
+        "body": "This is the body of message 2"
+    },
+    {
+        "id": 3,
+        "subject": "Message 3",
+        "body": "This is the body of message 3"
+    }
+]
