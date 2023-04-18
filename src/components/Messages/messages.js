@@ -1,17 +1,20 @@
-import ListGroup from 'react-bootstrap/ListGroup';
-import messages from '../../message.json'
-const Messages = () => {
-    
-    return (
-        <div>
-            {messages.map((item) => (
-                <ListGroup>
-                    <ListGroup.Item action href={`/messages/${item.id}`}>
-                        {item.subject}
-                    </ListGroup.Item>
-                </ListGroup>))}
-        </div>
-    )
-}
+import messages from "../../message.json";
+import { Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./messages.css";
 
-export default Messages
+const Messages = () => {
+  return (
+    <div className="messages-container">
+      <h1>Messages</h1>
+      {messages.map((item) => (
+        <h2 id="list-message" key={item.id}>
+          <Link to={`/messages/${item.id}`}>{item.subject}</Link>
+        </h2>
+      ))}
+      <Outlet />
+    </div>
+  );
+};
+
+export default Messages;

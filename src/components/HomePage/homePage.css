@@ -1,0 +1,34 @@
+/* #messages:visited{
+    background-color:white
+} */
+
+.navbar-link-list{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    margin-left: 25%;
+
+}
+
+h3{
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+#about{
+    text-decoration: none;
+}
+#contact{
+    text-decoration: none;
+}
+#messages{
+    text-decoration: none;
+}
+
+.color{
+    color: black;
+}
+.real-color{
+    color:#126efd
+}
