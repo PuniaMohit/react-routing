@@ -9,7 +9,7 @@ const Messages = () => {
       <h1>Messages</h1>
       {messages.map((item) => (
         <h2 id="list-message" key={item.id}>
-          <Link to={`/messages/${item.id}`}>{item.subject}</Link>
+          <Link to={`/messages/${item.id}`} className='message'>{item.subject}</Link>
         </h2>
       ))}
       <Outlet />
